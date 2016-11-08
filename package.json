@@ -1,0 +1,28 @@
+{
+  "name": "verticals_api",
+  "description": "",
+  "version": "1.0.0",
+  "private": true,
+  "author": "juniorSE7EN",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juniorSE7EN/verticals"
+  },
+  "engines": {
+    "node": "6.2.2",
+    "npm": "3.9.5"
+  },
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "lodash": "^4.16.4",
+    "method-override": "^2.3.6",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {}
+}
