@@ -24,21 +24,11 @@ router.all(
 router.get(
   '/api/verticals',
   function( req, res ) {
-    var verticals = [
-      'diet',
-      'muscle',
-      'skin'
-    ];
     var json = { sales: [] };
     var i = 0;
     var l = Math.floor( Math.random() * 10 );
 
-    for ( ; i < l; i ++ ) {
-      json.sales.push({
-        vertical: verticals[ Math.floor( Math.random() * verticals.length ) ],
-        price: Math.floor( Math.random() * 100 )
-      });
-    }
+    for ( ; i < l; i ++ ) {}
 
     res.json( json );
   }
