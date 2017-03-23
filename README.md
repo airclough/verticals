@@ -1,6 +1,6 @@
-# FM.js
+# Verticals
 
-Dead simple verticals API. With Node installed:
+Dead simple products API. With Node installed:
 
 * `npm install`
 * `node app`

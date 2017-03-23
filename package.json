@@ -22,7 +22,8 @@
     "express": "^4.14.0",
     "lodash": "^4.16.4",
     "method-override": "^2.3.6",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "uuid": "^3.0.1"
   },
   "devDependencies": {}
 }

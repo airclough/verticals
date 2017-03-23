@@ -10,6 +10,7 @@ var app = module.exports = express();
 // config
 config( app );
 
+// In memory sales instance.
 var sales = new Sales();
 
 // router
