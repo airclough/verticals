@@ -16,4 +16,4 @@ class Product {
   }
 }
 
-return Product;
+module.exports = Product;

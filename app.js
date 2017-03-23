@@ -2,12 +2,15 @@
 
 var express = require( 'express' );
 var config = require( './config' );
+var Sales = require( './sales' );
 
 // app
 var app = module.exports = express();
 
 // config
 config( app );
+
+var sales = new Sales();
 
 // router
 var router = express.Router();
@@ -22,15 +25,11 @@ router.all(
 );
 
 router.get(
-  '/api/verticals',
+  '/api/sales',
   function( req, res ) {
-    var json = { sales: [] };
-    var i = 0;
-    var l = Math.floor( Math.random() * 10 );
+    var _sales = sales.getSales();
 
-    for ( ; i < l; i ++ ) {}
-
-    res.json( json );
+    res.json( _sales.map( function( sale ) { return sale.data; } ) );
   }
 );
 
